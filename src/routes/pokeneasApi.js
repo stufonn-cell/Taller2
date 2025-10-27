@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/pokeneasController');
+const { getRandomPokenea } = require('../controllers/api/pokeneasControllerAPI');
 
-router.get('/random', controller.randomJson);
+router.get('/random', getRandomPokenea);
 
 module.exports = router;

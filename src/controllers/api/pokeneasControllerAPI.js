@@ -1,5 +1,5 @@
-const pokeneas = require('../data/pokeneas');
-const getContainerId = require('../utils/containerId');
+const pokeneas = require('../../data/pokeneas');
+const getContainerId = require('../../utils/containerId');
 
 function getRandomPick(arrayPokeneas) {
   return arrayPokeneas[Math.floor(Math.random() * arrayPokeneas.length)];
@@ -21,3 +21,5 @@ function getRandomPokenea(req, res) {
 module.exports = {
   getRandomPokenea
 };
+
+
