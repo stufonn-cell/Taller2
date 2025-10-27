@@ -1,82 +1,82 @@
 module.exports = [
   {
     id: 1,
-    nombre: 'Venonato',
-    altura: '2.0 m',
-    habilidad: 'Fotosíntesis Antioqueña',
-    imagen: '/images/venonat.png',
-    frase: 'La vida es un jardín; quien siembra comprensión recoge armonía.'
+    name: 'Venonat',
+    height: '2.0 m',
+    ability: 'Photosynthesis',
+    image: '/images/venonat.png',
+    phrase: 'Life is a garden; those who sow understanding reap harmony.'
   },
   {
     id: 2,
-    nombre: 'Aguijon',
-    altura: '1.1 m',
-    habilidad: 'Aguijón Dorado',
-    imagen: '/images/aguijon.png',
-    frase: 'El valor no es ruido; es la medida silenciosa de la convicción.'
+    name: 'Aguijon',
+    height: '1.1 m',
+    ability: 'Golden Sting',
+    image: '/images/aguijon.png',
+    phrase: 'Courage is not noise; it is the silent measure of conviction.'
   },
   {
     id: 3,
-    nombre: 'Neblina',
-    altura: '0.8 m',
-    habilidad: 'Capa de Niebla',
-    imagen: '/images/neblina.png',
-    frase: 'Caminar despacio aclara el mapa del corazón.'
+    name: 'Neblina',
+    height: '0.8 m',
+    ability: 'Mist Layer',
+    image: '/images/neblina.png',
+    phrase: 'Walking slowly clarifies the map of the heart.'
   },
   {
     id: 4,
-    nombre: 'Riachuel',
-    altura: '1.4 m',
-    habilidad: 'Corriente Serena',
-    imagen: '/images/riachuel.png',
-    frase: 'La corriente enseña: fluir es elegir el próximo paso.'
+    name: 'Riachuel',
+    height: '1.4 m',
+    ability: 'Serene Stream',
+    image: '/images/riachuel.png',
+    phrase: 'The current teaches: to flow is to choose the next step.'
   },
   {
     id: 5,
-    nombre: 'Charmander',
-    altura: '0.6 m',
-    habilidad: 'Mar llamas',
-    imagen: '/images/charmander.png',
-    frase: 'Si estoy debil, es porque guardo fuego dentro.'
+    name: 'Charmander',
+    height: '0.6 m',
+    ability: 'Sea of Flames',
+    image: '/images/charmander.png',
+    phrase: 'If I am weak, it is because I keep fire within.'
   },
   {
     id: 6,
-    nombre: 'Monferno',
-    altura: '0.9 m',
-    habilidad: 'Mar Llamas',
-    imagen: '/images/monferno.png',
-    frase: 'Controlo la intensidad de mi fuego con la calma de mi mente.'
+    name: 'Monferno',
+    height: '0.9 m',
+    ability: 'Sea of Flames',
+    image: '/images/monferno.png',
+    phrase: 'I control the intensity of my fire with the calm of my mind.'
   },
   {
     id: 7,
-    nombre: 'Wartortle',
-    altura: '1.0 m',
-    habilidad: 'Torrente',
-    imagen: '/images/wartortle.png',
-    frase: 'La luz propia no compite, solo revela caminos.'
+    name: 'Wartortle',
+    height: '1.0 m',
+    ability: 'Torrent',
+    image: '/images/wartortle.png',
+    phrase: 'One’s own light does not compete, it only reveals paths.'
   },
   {
     id: 8,
-    nombre: 'Umbreon',
-    altura: '1 m',
-    habilidad: 'Sincronía',
-    imagen: '/images/umbreon.png',
-    frase: 'Si me expongo al aura de la luna, los secretos se revelan.'
+    name: 'Umbreon',
+    height: '1 m',
+    ability: 'Synchrony',
+    image: '/images/umbreon.png',
+    phrase: 'If I am exposed to the moon’s aura, secrets are revealed.'
   },
   {
     id: 9,
-    nombre: 'Kakuna',
-    altura: '0.6 m',
-    habilidad: 'Mudar',
-    imagen: '/images/kakuna.png',
-    frase: 'El ritmo del alma se siente, no se explica.'
+    name: 'Kakuna',
+    height: '0.6 m',
+    ability: 'Molting',
+    image: '/images/kakuna.png',
+    phrase: 'The rhythm of the soul is felt, not explained.'
   },
   {
     id: 10,
-    nombre: 'Blastoise',
-    altura: '1.6 m',
-    habilidad: 'Torrente',
-    imagen: '/images/blastoise.png',
-    frase: 'La verdadera belleza florece en la autenticidad.'
+    name: 'Blastoise',
+    height: '1.6 m',
+    ability: 'Torrent',
+    image: '/images/blastoise.png',
+    phrase: 'True beauty blooms in authenticity.'
   }
 ];

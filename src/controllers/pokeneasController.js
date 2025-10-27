@@ -1,17 +1,17 @@
 const pokeneas = require('../data/pokeneas');
 const getContainerId = require('../utils/containerId');
 
-function pickRandom(arr) {
-  return arr[Math.floor(Math.random() * arr.length)];
+function pickRandom(arrayPokeneas) {
+  return arrayPokeneas[Math.floor(Math.random() * arrayPokeneas.length)];
 }
 
 exports.randomJson = (req, res) => {
-  const p = pickRandom(pokeneas);
+  const randomPokenea = pickRandom(pokeneas);
   const payload = {
-    id: p.id,
-    nombre: p.nombre,
-    altura: p.altura,
-    habilidad: p.habilidad,
+    id: randomPokenea.id,
+    name: randomPokenea.name,
+    height: randomPokenea.height,
+    ability: randomPokenea.ability,
     containerId: getContainerId(),
   };
   res.json(payload);

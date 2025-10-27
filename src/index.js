@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const pokeneasApiRouter = require('./routes/pokeneasApi');
 const pokeneasViewRouter = require('./routes/pokeneasView');
-const images = requiere('../public/images');
+const images = require('../public/images');
 const port = 3000
 
 app.use(express.json());
