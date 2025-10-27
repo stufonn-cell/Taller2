@@ -7,15 +7,16 @@ function getRandomPick(arrayPokeneas) {
 
 function getRandomPokenea(req, res) {
   const randomPokenea = getRandomPick(pokeneas);
-  const payload = {
-    id: randomPokenea.id,
-    name: randomPokenea.name,
-    height: randomPokenea.height,
-    ability: randomPokenea.ability,
-    containerId: getContainerId(),
-  };
+  const HTMLPayload = `
+        <div>
+          <h1>${getContainerId()}</h1>
+          <h2>${randomPokenea.name}</h2>
+          <img src="${randomPokenea.image}"></img>
+          <p>${randomPokenea.phrase}</p>
+        </div>
+  `;
 
-  res.json(randomPokenea);
+  res.send(HTMLPayload);
 }
 
 module.exports = {
