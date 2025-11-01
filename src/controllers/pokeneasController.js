@@ -1,5 +1,6 @@
 const pokeneas = require('../data/pokeneas');
 const getContainerId = require('../utils/containerId');
+const staticURL = "https://storage.googleapis.com/pokeneas-bucket-col1"
 
 function getRandomPick(arrayPokeneas) {
   return arrayPokeneas[Math.floor(Math.random() * arrayPokeneas.length)];
@@ -7,16 +8,14 @@ function getRandomPick(arrayPokeneas) {
 
 function getRandomPokenea(req, res) {
   const randomPokenea = getRandomPick(pokeneas);
-  const HTMLPayload = `
-        <div>
-          <h1>${getContainerId()}</h1>
-          <h2>${randomPokenea.name}</h2>
-          <img src="${randomPokenea.image}"></img>
-          <p>${randomPokenea.phrase}</p>
-        </div>
-  `;
+  const viewData = {
+    poke_image : staticURL + randomPokenea.image,
+    poke_phrase : randomPokenea.phrase,
+    poke_name : randomPokenea.name.toUpperCase(),
+    poke_audio : staticURL + randomPokenea.audio
+  };
 
-  res.send(HTMLPayload);
+  res.render('index', viewData);
 }
 
 module.exports = {

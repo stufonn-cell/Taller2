@@ -1,0 +1,22 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title PokeNea!
+  link(rel='stylesheet' href='/main.css')
+  script(defer='' src='/main.js')
+.main-container
+  video#background-video(src='https://storage.googleapis.com/pokeneas-bucket-col1/video/back_pkm.mp4' muted='' autoplay='')
+  #page-content
+    .pokemon-info-container
+      #pokemon-speech-container
+        #pokemon-image-container
+          img#pokemon-image(src=poke_image alt='Pokemon Image')
+        #speech-container
+          #speech-image
+            #pokemon-phrase=poke_phrase
+      #pokemon-name=poke_name
+audio#whos_that(hidden='' autoplay='')
+  source(src='https://storage.googleapis.com/pokeneas-bucket-col1/audio/whos_that_pokemon_generic.mp3' type='audio/mpeg')
+audio#pokemon_audio(hidden='')
+  source(src=poke_audio type='audio/mpeg')

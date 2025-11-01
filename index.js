@@ -9,6 +9,9 @@ const port = 3000;
 app.use(express.json());
 app.use(express.static("public"));
 
+app.set("view engine", "pug");
+app.set("views", "./src/views");
+
 app.use('/api', pokeneasApiRouter);
 app.use('/view', pokeneasRouter);
 
