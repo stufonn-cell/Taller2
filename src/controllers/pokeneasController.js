@@ -10,7 +10,7 @@ function getRandomPokenea(req, res) {
   const randomPokenea = getRandomPick(pokeneas);
   const viewData = {
     poke_image : staticURL + randomPokenea.image,
-    poke_phrase : randomPokenea.phrase,
+    poke_phrase : randomPokenea.phrase + " - " + getContainerId(),
     poke_name : randomPokenea.name.toUpperCase(),
     poke_audio : staticURL + randomPokenea.audio
   };
