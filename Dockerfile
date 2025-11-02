@@ -8,10 +8,6 @@ RUN sh -c "if [ -f package-lock.json ]; then npm ci --only=production --silent; 
 
 COPY . .
 
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-
-USER appuser
-
 ENV NODE_ENV=production
 
 EXPOSE 80
